@@ -1,0 +1,106 @@
+.login_index {
+    font-family: Georgia, sans-serif;
+    background-image: url("../../assets/login/bgImg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    // 该属性值会对元素的宽度设置一个最小限制。因此，元素可以比指定值宽，但不能比其窄。不允许指定负值
+    min-width: 1190px;
+    height: 100%;
+    width: 100%;
+    /**生成绝对定位的元素，相对于浏览器窗口进行定位。*/
+    position: fixed;
+
+    .login {
+        background-image: url("../../assets/login/loginBg.png");
+        background-repeat: no-repeat;
+        width: 520px;
+        height: 416px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+
+        // translate()函数是css3的新特性.在不知道自身宽高的情况下，可以利用它来进行水平垂直居中.。
+        // 当使用：top: 50%;left: 50%;， 是以左上角为原点，故不处于中心位置
+        // translate(-50%,-50%) 作用是，往上（x轴）,左（y轴）移动自身长宽的 50%，以使其居于中心位置。
+        transform: translate(-50%, -50%);
+        background-size: 100% 100%;
+        background-position: center;
+
+
+    }
+
+    .p {
+        font-size: 26px;
+        font-family: Microsoft YaHei;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 1);
+        width: 100%;
+        text-align: center;
+        height: 60px;
+        line-height: 86px;
+    }
+}
+
+
+.form_wrap {
+    // 指定登录块的宽度
+    width: 420px;
+    // 水平居中
+    margin: 0 auto;
+    margin-top: 60px;
+
+    .login_form {
+        .input {
+            width: 100%;
+            height: 48px;
+            background: rgba(6, 47, 128, 1);
+            // 边框阴影效果
+            box-shadow: 1px 2px 25px 1px rgb(63, 233, 11);
+            opacity: 0.7;
+            // 边框圆角
+            border-radius: 8px;
+
+            :global {
+                .ant-input {
+                    width: 420px;
+                    background: rgba(6, 47, 128, 1);
+                    // 首行文本的缩进
+                    text-indent: 5px;
+                    color: #fff;
+                }
+            }
+
+            .icon {
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 18px;
+            }
+        }
+
+        .login_form_btn {
+            width: 100%;
+            height: 48px;
+            font-family: Microsoft YaHei;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .login_form_tags {
+
+            .rem {
+                float: left;
+                color: whitesmoke;
+            }
+
+            .a {
+                float: right;
+                color: whitesmoke;
+
+                &:hover {
+                    color: yellow;
+                }
+            }
+        }
+
+
+    }
+}

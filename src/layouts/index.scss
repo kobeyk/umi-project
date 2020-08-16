@@ -1,0 +1,21 @@
+.copyright {
+  // 一定要定位，配合left:0;right:0; 可以实现水平居中
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  color: rgb(240, 235, 235);
+  font-size: 18px;
+  text-align: center;
+
+  .a {
+    margin-top: 10px;
+    color: rgb(240, 235, 235);
+    padding: 20px;
+
+    &:hover {
+      color: red;
+      text-decoration: underline;
+    }
+  }
+}
